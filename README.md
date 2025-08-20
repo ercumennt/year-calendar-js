@@ -36,7 +36,7 @@ Parameters
 Presets
 ---
 
-The above parameter list is versatile enough to many options for display. Below is an abreviated list of presets that might be useful to people.
+The above parameter list is versatile enough to provide many options for display. Below is an abreviated list of presets that might be useful to people.
 
 | Preset | Description |
 |---|---|
