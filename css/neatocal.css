@@ -24,13 +24,14 @@ SOFTWARE.
 
 */
 
-/*
 @media print {
-	#info {
-		display: none;
-	}
+  @page {
+    margin: 0;
+  }
+  #ui_info {
+    display: none;
+  }
 }
-*/
 
 html {
 	font-family: 'Oswald';
