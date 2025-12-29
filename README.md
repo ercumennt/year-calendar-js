@@ -108,8 +108,8 @@
 
 사용 예시:
 
-- [2026년 공휴일 달력](https://dev-huiya.github.io/year-calendar-js?data=example/holiday_2026_kr.json)
-- [2027년 공휴일 달력](https://dev-huiya.github.io/year-calendar-js?data=example/holiday_2027_kr.json)
+- [2026년 공휴일 달력](https://dev-huiya.github.io/year-calendar-js?year=2026&data=example/holiday_2026_kr.json)
+- [2027년 공휴일 달력](https://dev-huiya.github.io/year-calendar-js?year=2027&data=example/holiday_2027_kr.json)
 
 파일이 없거나 파싱할 수 없는 경우, 데이터 파일이 없는 것처럼 렌더링이 계속됩니다.
 
