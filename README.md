@@ -91,6 +91,26 @@
 `color_cell`은 개별 셀 강조를 허용합니다 ([예시](https://dev-huiya.github.io/year-calendar-js?data=example/sched.json)).
 `color_cell` 배열이 있는 예시 데이터 파일은 [example/sched.json](example/sched.json)을 참조하세요.
 
+### 한국 공휴일 파일
+
+한국 공휴일이 포함된 데이터 파일이 제공됩니다. 각 공휴일은 유형에 따라 다른 색상으로 표시됩니다:
+
+- **명절 (설날, 추석)**: 빨간색 계열 (`#ff9999`, `#ffcccc`)
+- **국경일 (3ㆍ1절, 광복절, 개천절, 한글날)**: 파란색 계열 (`#cce5ff`)
+- **기타 공휴일 (어린이날, 부처님 오신 날)**: 노란색 계열 (`#fff4cc`)
+- **선거일**: 보라색 계열 (`#e6ccff`)
+- **대체공휴일**: 회색 (`#f0f0f0`)
+
+사용 가능한 파일:
+
+- [example/holiday_2026_kr.json](example/holiday_2026_kr.json) - 2026년 한국 공휴일
+- [example/holiday_2027_kr.json](example/holiday_2027_kr.json) - 2027년 한국 공휴일
+
+사용 예시:
+
+- [2026년 공휴일 달력](https://dev-huiya.github.io/year-calendar-js?data=example/holiday_2026_kr.json)
+- [2027년 공휴일 달력](https://dev-huiya.github.io/year-calendar-js?data=example/holiday_2027_kr.json)
+
 파일이 없거나 파싱할 수 없는 경우, 데이터 파일이 없는 것처럼 렌더링이 계속됩니다.
 
 ## 기타
