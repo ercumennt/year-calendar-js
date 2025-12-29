@@ -34,7 +34,7 @@ SOFTWARE.
 }
 
 html {
-	font-family: 'Oswald';
+	font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 html, body {
 	height: 100%;
@@ -65,7 +65,7 @@ td:empty {
 }
 .date {
 	display: inline-block;
-	width: 1.1em;
+	width: 1.3em;
 }
 .day {
 	display: inline-block;

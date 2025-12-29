@@ -1,61 +1,56 @@
-NeatoCal
-===
+# NeatoCal (니토캘)
 
-A neato calendar with the full year on a single page.
+한 페이지에 1년 전체를 보여주는 멋진 달력입니다.
 
-Based on the very awesome [Neatnik's Calendar](https://neatnik.net/dispenser/?project=calendar) project.
+이 프로젝트는 [Neatnik's Calendar](https://neatnik.net/dispenser/?project=calendar)에서 영감을 받은 [NeatoCal](https://github.com/abetusk/neatocal) 프로젝트의 한국 현지화 버전입니다.
 
-This is a JavaScript port with added parameters (see below) and designed to be "dependency free" with all files local.
+추가 파라미터(아래 참조)가 포함된 JavaScript 포팅 버전이며, 모든 파일이 로컬에 있어 "의존성 없이" 설계되었습니다.
 
-Here's a [live demo](https://abetusk.github.io/neatocal).
+[라이브 데모](https://dev-huiya.github.io/year-calendar-js/)를 확인해보세요.
 
-Screenshots
----
+## 스크린샷
 
-![default](img/neatocal_default.png)
+![기본](img/neatocal_default.png)
 
-![aligned](img/neatocal_align.png)
+![정렬](img/neatocal_align.png)
 
-Parameters
----
+## 파라미터
 
-| URL Parameter | Description | Example |
-|---|---|---|
-| `year` | Change year (default to current year) | [...?year=2030](https://abetusk.github.io/neatocal?year=2030) |
-| `start_month` | Start at month other than January. 0 indexed (`0`=Jan, `1`=Feb, ...).  | [...?start_month=7](https://abetusk.github.io/neatocal?start_month=7) |
-| `n_month` | Change number of months to something other than 12 (default `12`).  | [...?n_month=6](https://abetusk.github.io/neatocal?n_month=6) |
-| `layout` | Changes the layout of the calendar. `default` or `aligned-weekdays`.  | [...?layout=aligned-weekdays](https://abetusk.github.io/neatocal?layout=aligned-weekdays) |
-| `start_day` | Start at day other than Monday. 0 indexed (`0`=Sun, `1`=Mon, ...). Only valid with `aligned-weekdays` layout  | [...?layout=aligned-weekdays&start_day=0](https://abetusk.github.io/neatocal?layout=aligned-weekdays&start_day=0) |
-| `highlight_color` | Change the weekend highlight color (default `eee`) | [...?highlight_color=fee](https://abetusk.github.io/neatocal?highlight_color=fee) |
-| `language` | Change the language for month and day codes. Values will be overridden if `month_code` or `language_code` is specified. | [...?language=ko-KR](https://abetusk.github.io/neatocal?language=ko-KR) |
-| `weekday_code` | Comma separated list of weekday codes to use (default `Su,M,T,W,R,F,Sa`). Elements can be blank if no weekday code is wanted. | [...?weekday_code=S,M,T,W,T,F,S](https://abetusk.github.io/neatocal?weekday_code=S,M,T,W,T,F,S) |
-| `month_code` | Comma separated list of month codes to use (default `Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec`). Elements can be blank if no month code is wanted. | [...?month_code=J,F,M,A,M,J,J,A,S,O,N,D](https://abetusk.github.io/neatocal?month_code=J,F,M,A,M,J,J,A,S,O,N,D) |
-| `cell_height` | CSS parameter to alter cell height. | [...?cell_height=1.5em](https://abetusk.github.io/neatocal?cell_height=1.5em) |
-| `data` | Location of JSON data file. | [...?data=example/data.json](https://abetusk.github.io/neatocal?data=example/data.json) |
-| `help` | Show help screen  | [...?help](https://abetusk.github.io/neatocal?help) |
+| URL 파라미터      | 설명                                                                                                                                        | 예시                                                                                                                            |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `year`            | 연도 변경 (기본값: 현재 연도)                                                                                                               | [...?year=2030](https://dev-huiya.github.io/year-calendar-js?year=2030)                                                         |
+| `start_month`     | 1월이 아닌 다른 월에서 시작. 0부터 시작 (`0`=1월, `1`=2월, ...).                                                                            | [...?start_month=7](https://dev-huiya.github.io/year-calendar-js?start_month=7)                                                 |
+| `n_month`         | 12개월이 아닌 다른 개수로 변경 (기본값 `12`).                                                                                               | [...?n_month=6](https://dev-huiya.github.io/year-calendar-js?n_month=6)                                                         |
+| `layout`          | 달력 레이아웃 변경. `default` 또는 `aligned-weekdays`.                                                                                      | [...?layout=aligned-weekdays](https://dev-huiya.github.io/year-calendar-js?layout=aligned-weekdays)                             |
+| `start_day`       | 월요일이 아닌 다른 요일에서 시작. 0부터 시작 (`0`=일, `1`=월, ...). `aligned-weekdays` 레이아웃에서만 유효                                  | [...?layout=aligned-weekdays&start_day=0](https://dev-huiya.github.io/year-calendar-js?layout=aligned-weekdays&start_day=0)     |
+| `highlight_color` | 주말 강조 색상 변경 (기본값 `eee`)                                                                                                          | [...?highlight_color=fee](https://dev-huiya.github.io/year-calendar-js?highlight_color=fee)                                     |
+| `language`        | 월과 요일 코드의 언어 변경. `month_code` 또는 `weekday_code`가 지정되면 해당 값이 우선 적용됨.                                              | [...?language=ko-KR](https://dev-huiya.github.io/year-calendar-js?language=ko-KR)                                               |
+| `weekday_code`    | 사용할 요일 코드의 쉼표 구분 목록 (기본값 `일,월,화,수,목,금,토`). 요일 코드가 필요 없으면 요소를 비워둘 수 있음.                           | [...?weekday_code=일,월,화,수,목,금,토](https://dev-huiya.github.io/year-calendar-js?weekday_code=일,월,화,수,목,금,토)         |
+| `month_code`      | 사용할 월 코드의 쉼표 구분 목록 (기본값 `1월,2월,3월,4월,5월,6월,7월,8월,9월,10월,11월,12월`). 월 코드가 필요 없으면 요소를 비워둘 수 있음. | [...?month_code=1,2,3,4,5,6,7,8,9,10,11,12](https://dev-huiya.github.io/year-calendar-js?month_code=1,2,3,4,5,6,7,8,9,10,11,12) |
+| `cell_height`     | 셀 높이를 변경하는 CSS 파라미터.                                                                                                            | [...?cell_height=1.5em](https://dev-huiya.github.io/year-calendar-js?cell_height=1.5em)                                         |
+| `data`            | JSON 데이터 파일 위치.                                                                                                                      | [...?data=example/data.json](https://dev-huiya.github.io/year-calendar-js?data=example/data.json)                               |
+| `help`            | 도움말 화면 표시                                                                                                                            | [...?help](https://dev-huiya.github.io/year-calendar-js?help)                                                                   |
 
-Presets
----
+## 프리셋
 
-The above parameter list is versatile enough to provide many options for display. Below is an abbreviated list of presets that might be useful to people.
+위의 파라미터 목록은 다양한 표시 옵션을 제공할 만큼 다재다능합니다. 아래는 유용할 수 있는 프리셋의 간략한 목록입니다.
 
-| Preset | Description |
-|---|---|
-| [Color and aligned](https://abetusk.github.io/neatocal?layout=aligned-weekdays&highlight_color=fee) | Calendar with aligned days and red highlighted weekends |
-| [Academic calendar](https://abetusk.github.io/neatocal?start_month=7) | An "academic calendar" that starts on Sept and runs through to August of the following year |
-| Half Page [left](https://abetusk.github.io/neatocal?n_month=6) and [right](https://abetusk.github.io/neatocal?start_month=6&n_month=6) calendars | Two half page (6 months) calendars |
-| [Non-highlighted calendar](https://abetusk.github.io/neatocal?highlight_color=fff) | Calendar without the weekend highlighting |
-| [Chinese month and day](https://abetusk.github.io/neatocal/?month_code=1%E6%9C%88,2%E6%9C%88,3%E6%9C%88,4%E6%9C%88,5%E6%9C%88,6%E6%9C%88,7%E6%9C%88,8%E6%9C%88,9%E6%9C%88,10%E6%9C%88,11%E6%9C%88,12%E6%9C%88&weekday_code=%E6%97%A5,%E4%B8%80,%E4%BA%8C,%E4%B8%89,%E5%9B%9B,%E4%BA%94,%E5%85%AD) | Calendar with (simplified) Chinese month and day abbreviations (thanks to [myway42](https://github.com/myway42/calendar)) |
-| [German month and day](https://abetusk.github.io/neatocal/?weekday_code=S,M,D,M,D,F,S&month_code=Jan,Feb,M%C3%A4r,Apr,Mai,Jun,Jul,Aug,Sep,Okt,Nov,Dez) | Calendar with German month and day abbreviations (thanks to [moontear](https://news.ycombinator.com/user?id=moontear)) |
-| [Turkish month and day](https://abetusk.github.io/neatocal/?year=2026&month_code=Oca,%C5%9Eub,Mar,N%C4%B0s,May,Haz,Tem,A%C4%9Fu,Eyl,Ek%C4%B0,Kas,Ara&weekday_code=Pz,Pt,S,%C3%87,Pe,Cu,Ct) | Calendar with Turkish month and day abbreviations |
-| [Two year calendar](https://abetusk.github.io/neatocal?n_month=24&layout=aligned-weekdays&start_day=0) | Two year single page calendar |
+| 프리셋                                                                                                                                                                                                                                                                                     | 설명                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| [컬러 및 정렬](https://dev-huiya.github.io/year-calendar-js?layout=aligned-weekdays&highlight_color=fee)                                                                                                                                                                                   | 정렬된 요일과 빨간색 주말 강조가 있는 달력                                                          |
+| [학사 일정](https://dev-huiya.github.io/year-calendar-js?start_month=7)                                                                                                                                                                                                                    | 9월에 시작하여 다음 해 8월까지 이어지는 "학사 일정"                                                 |
+| 반 페이지 [왼쪽](https://dev-huiya.github.io/year-calendar-js?n_month=6) 및 [오른쪽](https://dev-huiya.github.io/year-calendar-js?start_month=6&n_month=6) 달력                                                                                                                            | 두 개의 반 페이지 (6개월) 달력                                                                      |
+| [강조 없는 달력](https://dev-huiya.github.io/year-calendar-js?highlight_color=fff)                                                                                                                                                                                                         | 주말 강조가 없는 달력                                                                               |
+| [중국어 월/요일](https://abetusk.github.io/neatocal/?month_code=1%E6%9C%88,2%E6%9C%88,3%E6%9C%88,4%E6%9C%88,5%E6%9C%88,6%E6%9C%88,7%E6%9C%88,8%E6%9C%88,9%E6%9C%88,10%E6%9C%88,11%E6%9C%88,12%E6%9C%88&weekday_code=%E6%97%A5,%E4%B8%80,%E4%BA%8C,%E4%B8%89,%E5%9B%9B,%E4%BA%94,%E5%85%AD) | (간체) 중국어 월 및 요일 약어가 있는 달력 ([myway42](https://github.com/myway42/calendar) 제공)     |
+| [독일어 월/요일](https://abetusk.github.io/neatocal/?weekday_code=S,M,D,M,D,F,S&month_code=Jan,Feb,M%C3%A4r,Apr,Mai,Jun,Jul,Aug,Sep,Okt,Nov,Dez)                                                                                                                                           | 독일어 월 및 요일 약어가 있는 달력 ([moontear](https://news.ycombinator.com/user?id=moontear) 제공) |
+| [터키어 월/요일](https://abetusk.github.io/neatocal/?year=2026&month_code=Oca,%C5%9Eub,Mar,N%C4%B0s,May,Haz,Tem,A%C4%9Fu,Eyl,Ek%C4%B0,Kas,Ara&weekday_code=Pz,Pt,S,%C3%87,Pe,Cu,Ct)                                                                                                        | 터키어 월 및 요일 약어가 있는 달력                                                                  |
+| [2년 달력](https://dev-huiya.github.io/year-calendar-js?n_month=24&layout=aligned-weekdays&start_day=0)                                                                                                                                                                                    | 한 페이지에 2년을 표시하는 달력                                                                     |
 
-Data File
----
+## 데이터 파일
 
-There is a data file option that can be used to provide parameters or text in the day cells.
+파라미터나 날짜 셀에 텍스트를 제공하는 데 사용할 수 있는 데이터 파일 옵션이 있습니다.
 
-The format is:
+형식은 다음과 같습니다:
 
 ```
 {
@@ -67,13 +62,13 @@ The format is:
       { "date":"YYYY-MM-DD", "color":"#rgb" }
     ]
   },
-  "YYYY-MM-DD" : "text",
+  "YYYY-MM-DD" : "텍스트",
   ...
-  "YYYY-MM-DD" : "text"
+  "YYYY-MM-DD" : "텍스트"
 }
 ```
 
-The file [example/data.json](example/data.json) provides an example:
+[example/data.json](example/data.json) 파일이 예시를 제공합니다:
 
 ```
 {
@@ -90,22 +85,18 @@ The file [example/data.json](example/data.json) provides an example:
 }
 ```
 
+`"param" : {}` 섹션에서 허용되는 파라미터는 URL 파라미터와 동일한 이름을 가집니다.
+데이터 파일에 파라미터가 지정되면 URL에 제공된 파라미터를 덮어씁니다.
 
-The admissible parameters in the `"param" : {}` section have the same name as the URL parameters.
-If a parameter is specified in the data file, they will override any parameters provided in the URL.
+`color_cell`은 개별 셀 강조를 허용합니다 ([예시](https://dev-huiya.github.io/year-calendar-js?data=example/sched.json)).
+`color_cell` 배열이 있는 예시 데이터 파일은 [example/sched.json](example/sched.json)을 참조하세요.
 
-`color_cell` allows for individual cell highlighting ([example](https://abetusk.github.io/neatocal?data=example/sched.json)).
-See [example/sched.json](example/sched.json) for the example data file with the `color_cell` array.
+파일이 없거나 파싱할 수 없는 경우, 데이터 파일이 없는 것처럼 렌더링이 계속됩니다.
 
-If the file is not present or isn't able to be parsed, the render will continue as the data file isn't present.
+## 기타
 
+Neatnik의 원본 저장소는 [이곳으로 이동](https://neatnik.net/dispenser/?project=calendar)했지만, 레거시 GitHub 저장소는 [여기](https://neatnik.net/dispenser/?project=calendar)에서 찾을 수 있습니다.
 
-Misc
----
-
-Neatnik's original repo has [since moved](https://neatnik.net/dispenser/?project=calendar) but the legacy GitHub repo can be found [here](https://neatnik.net/dispenser/?project=calendar).
-
-License
----
+## 라이선스
 
 MIT
